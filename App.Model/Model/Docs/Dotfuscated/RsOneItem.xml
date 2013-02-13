@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE dotfuscator SYSTEM "http://www.preemptive.com/dotfuscator/dtd/dotfuscator_v2.1.dtd">
+<dotfuscator version="2.1">
+  <!--This is application generated code. Do not edit manually.-->
+  <input>
+    <asmlist>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App.Model.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Browsers.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Code.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_global.asax.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Licenses.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_0fetr-ij.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_39czvjl9.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_5i803k47.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_7jptwsl0.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_8hjtugn3.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_8jg2wp0a.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_9d364zmb.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_9phu-28r.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_dgrevwjl.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_dwxf4v37.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_effxlze3.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_fmjgkx4v.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_i-hwi5wl.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_jtwwxde8.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_k_cywici.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_l8eblpqw.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_ll8o1xyw.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_pptwrnex.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_pxyxhwlw.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_r9i9td9w.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_v_ciz4y-.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_xnomojjc.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_yflvabol.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_zo9slz_k.dll" />
+      </inputassembly>
+      <inputassembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web__jmk9_dm.dll" />
+      </inputassembly>
+    </asmlist>
+  </input>
+  <output>
+    <file dir="${configdir}\Dotfuscated" />
+  </output>
+  <renaming>
+    <excludelist>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Browsers.dll" />
+      </assembly>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Code.dll" />
+      </assembly>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_global.asax.dll" />
+      </assembly>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Licenses.dll" />
+      </assembly>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_0fetr-ij.dll" />
+      </assembly>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_39czvjl9.dll" />
+      </assembly>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_5i803k47.dll" />
+      </assembly>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_7jptwsl0.dll" />
+      </assembly>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_8hjtugn3.dll" />
+      </assembly>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_8jg2wp0a.dll" />
+      </assembly>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_9d364zmb.dll" />
+      </assembly>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_9phu-28r.dll" />
+      </assembly>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_dgrevwjl.dll" />
+      </assembly>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_dwxf4v37.dll" />
+      </assembly>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_effxlze3.dll" />
+      </assembly>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_fmjgkx4v.dll" />
+      </assembly>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_i-hwi5wl.dll" />
+      </assembly>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_jtwwxde8.dll" />
+      </assembly>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_k_cywici.dll" />
+      </assembly>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_l8eblpqw.dll" />
+      </assembly>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_ll8o1xyw.dll" />
+      </assembly>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_pptwrnex.dll" />
+      </assembly>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_pxyxhwlw.dll" />
+      </assembly>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_r9i9td9w.dll" />
+      </assembly>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_v_ciz4y-.dll" />
+      </assembly>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_xnomojjc.dll" />
+      </assembly>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_yflvabol.dll" />
+      </assembly>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web_zo9slz_k.dll" />
+      </assembly>
+      <assembly>
+        <file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name="App_Web__jmk9_dm.dll" />
+      </assembly>
+
+
+      <namespace name="AjaxControlToolkit" />
+      <namespace name="AjaxControlToolkit.Design" />
+      <namespace name="AjaxControlToolkit.MaskedEditValidatorCompatibility" />
+      <type name="App.Model.AccountRequestTypeE">
+        <field name="ActivateAccount" />
+        <field name="ActivateEmail" />
+        <field name="Unknown" />
+        <field name="value__" />
+      </type>
+      <type name="App.Model.BaseItems`2&lt;T,TC&gt;" />
+      <type name="App.Model.IBaseItems`2&lt;T,TC&gt;" />
+      <type name="App.Model.IRsControl" />
+      <type name="App.Model.RoleE">
+        <field name="Anonymous" />
+        <field name="ServiceAdmin" />
+        <field name="ServiceUser" />
+        <field name="SiteAdmin" />
+        <field name="SiteUser" />
+        <field name="Unknown" />
+        <field name="value__" />
+      </type>
+      <type name="App.Model.RsCheckBox" />
+      <type name="App.Model.RsCheckBoxList" />
+      <type name="App.Model.RsDoubleOpt" />
+      <type name="App.Model.RsDropDownList" />
+      <type name="App.Model.RsFileUpload" />
+      <type name="App.Model.RsFileViewer" />
+      <type name="App.Model.RsGridView" />
+      <type name="App.Model.RsHyperLink" />
+      <type name="App.Model.RsImageButton" />
+      <type name="App.Model.RsLabel" />
+      <type name="App.Model.RsList" />
+      <type name="App.Model.RsMail" />
+      <type name="App.Model.RsOneItemTable">
+        <field name="Attribute" />
+        <field name="AttributeLayout" />
+        <field name="AttributeTable" />
+        <field name="AttributeType" />
+        <field name="Category" />
+        <field name="Item" />
+        <field name="ItemAttribute" />
+        <field name="Layout" />
+        <field name="Log" />
+        <field name="Role" />
+        <field name="RoleTask" />
+        <field name="Service" />
+        <field name="ServiceCategory" />
+        <field name="ServiceTask" />
+        <field name="ServiceType" />
+        <field name="ServiceUser" />
+        <field name="Status" />
+        <field name="Task" />
+        <field name="Unknown" />
+        <field name="User" />
+        <field name="UserRole" />
+        <field name="value__" />
+        <field name="ZAdminAttribute" />
+        <field name="ZDummyAttribute" />
+      </type>
+      <type name="App.Model.RsRadioButton" />
+      <type name="App.Model.RsRadioButtonList" />
+      <type name="App.Model.RsRichTextBox" />
+      <type name="App.Model.RsTextArea" />
+      <type name="App.Model.RsTextBox" />
+      <type name="App.Model.RsYearCombo" />
+      <type name="App.Model.SearchQuery" excludetype="false">
+        <method name="ods_ObjectCreating" signature="object,System.Web.UI.WebControls.ObjectDataSourceEventArgs" />
+      </type>
+      <type name="App.Model.SqlHelper/SqlConnectionOwnership" />
+      <type name="App.Model.SubscribeStatus" />
+      <type name="App.Model.TableAdapter">
+        <method name="GetData" signature="" />
+        <method name="GetData" signature="int32,int32" />
+        <method name="VirtualItemCount" signature="" />
+        <field name="_dt" />
+        <field name="_vic" />
+      </type>
+      <type name="App.Model.ValueSource1" excludetype="false">
+        <method name="GetName" signature="string" />
+        <method name="Text" signature="App.Model.Cxt,string,string" />
+        <method name="Value" signature="App.Model.Cxt,string" />
+      </type>
+    </excludelist>
+    <mapping>
+      <mapoutput overwrite="true">
+        <file dir="${configdir}\Dotfuscated" name="Map.xml" />
+      </mapoutput>
+    </mapping>
+  </renaming>
+</dotfuscator>

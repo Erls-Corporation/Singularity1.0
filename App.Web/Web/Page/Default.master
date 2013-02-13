@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" CodeFile="Default.master.cs" Inherits="Default_master" %>
+
+<%@ Register Src="~/Web/Uc/Layout/FooterUc.ascx" TagName="FooterUc" TagPrefix="uc1" %>
+<%@ Register Src="~/Web/Uc/Layout/HeaderUc.ascx" TagName="HeaderUc" TagPrefix="uc8" %>
+<%@ Register Src="~/Web/Uc/Layout/MenuUc.ascx" TagName="MenuUc" TagPrefix="uc5" %>
+<%@ Register Src="~/Web/Uc/Gadgets/GoogleAdUc.ascx" TagName="GoogleAdUc" TagPrefix="uc4" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>
+    <%= Cxt.Service.PageTitleCalc %></title>
+  <meta name="keywords" content="<%= Cxt.Service.MetaKeywordsCalc %>" />
+  <meta name="description" content="<%= Cxt.Service.MetaDescriptionCalc %>" />
+  <link href="<%= BaseUrl%>/Web/Css/Style.css" rel="stylesheet" type="text/css" media="screen" />
+  <link rel="SHORTCUT ICON" href="<%= BaseUrl%>/Web/Img/i.ico" />
+
+  <script type="text/javascript" src="<%= BaseUrl%>/Web/Js/Script.js"></script>
+
+</head>
+<body>
+  <table class="tfw">
+    <tr>
+      <td valign="top">
+        <form id="form1" runat="server">
+        <div class="dh">
+          <uc8:HeaderUc ID="huc1" runat="server" />
+        </div>
+        <div class="dhn">
+          <uc5:MenuUc ID="muc1" runat="server" />
+        </div>
+        <div class="dha">
+          <uc4:GoogleAdUc ID="guc12" runat="server" AdType="One728x15" />
+        </div>
+        <asp:ContentPlaceHolder ID="cph1" runat="server" />
+        <div class="dfa">
+          <uc4:GoogleAdUc ID="guc22" runat="server" />
+        </div>
+        <div class="dfn">
+          <uc5:MenuUc ID="muc2" runat="server" />
+        </div>
+        <div class="df">
+          <uc1:FooterUc ID="fuc1" runat="server" />
+        </div>
+        </form>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ItemAttribute">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ItemAttributeID" type="xs:int" minOccurs="0" />
+              <xs:element name="ServiceID" type="xs:int" minOccurs="0" />
+              <xs:element name="CategoryID" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemID" type="xs:int" minOccurs="0" />
+              <xs:element name="AttributeID" type="xs:int" minOccurs="0" />
+              <xs:element name="Value" type="xs:string" minOccurs="0" />
+              <xs:element name="ValueText" type="xs:string" minOccurs="0" />
+              <xs:element name="CreatedBy" type="xs:int" minOccurs="0" />
+              <xs:element name="DateCreated" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ModifiedBy" type="xs:int" minOccurs="0" />
+              <xs:element name="DateModified" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

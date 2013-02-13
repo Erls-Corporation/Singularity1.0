@@ -1,0 +1,14 @@
+<DocumentElement xmlns="http://tempuri.org/Kv.xsd">
+  <Kv>
+    <k>DataSource</k>
+    <v>Service</v>
+  </Kv>
+  <Kv>
+    <k>DataValueField</k>
+    <v>ServiceID</v>
+  </Kv>
+  <Kv>
+    <k>DataTextField</k>
+    <v>Name</v>
+  </Kv>
+</DocumentElement>

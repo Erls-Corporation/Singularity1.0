@@ -1,0 +1,3 @@
+dir/s /b  E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\App*.dll>E:\RS\Products\Rs.OneItem\App.Model\Model\Docs\Dotfuscated\DllNames.txt
+
+<inputassembly><file dir="E:\RS\Products\Rs.OneItem\PrecompiledWeb\App.Web\bin\" name=".dll" /></inputassembly>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Kv" targetNamespace="http://tempuri.org/Kv.xsd" xmlns:mstns="http://tempuri.org/Kv.xsd" xmlns="http://tempuri.org/Kv.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Kv" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="Kv" msprop:Generator_UserDSName="Kv" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Kv" msprop:Generator_UserTableName="Kv" msprop:Generator_RowDeletedName="KvRowDeleted" msprop:Generator_TableClassName="KvDataTable" msprop:Generator_RowChangedName="KvRowChanged" msprop:Generator_RowClassName="KvRow" msprop:Generator_RowChangingName="KvRowChanging" msprop:Generator_RowEvArgName="KvRowChangeEvent" msprop:Generator_RowEvHandlerName="KvRowChangeEventHandler" msprop:Generator_TablePropName="_Kv" msprop:Generator_TableVarName="tableKv" msprop:Generator_RowDeletingName="KvRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="k" msprop:Generator_UserColumnName="k" msprop:Generator_ColumnPropNameInRow="k" msprop:Generator_ColumnVarNameInTable="columnk" msprop:Generator_ColumnPropNameInTable="kColumn" type="xs:string" />
+              <xs:element name="v" msprop:Generator_UserColumnName="v" msprop:Generator_ColumnPropNameInRow="v" msprop:Generator_ColumnVarNameInTable="columnv" msprop:Generator_ColumnPropNameInTable="vColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="KvKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Kv" />
+      <xs:field xpath="mstns:k" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

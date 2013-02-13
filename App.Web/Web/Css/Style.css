@@ -1,0 +1,336 @@
+﻿/* (c) Copyright RafeySoft, Karachi Pakistan. http://rafeysoft.com
+// This source is subject to following License:
+// http://rafeysoft.com/Web/Page/ItemEdit.aspx?sid=29&lid=4&cid=23&iid=2143
+// Please write to info@rafeysoft.com for more information
+// All other rights reserved.
+*/
+body
+{
+    font-family: Verdana, Helvetica, Helvetica-Narrow, sans-serif;
+    margin: 0px;
+	font-size: 0.7em;
+}
+a:link
+{
+    text-decoration: none;
+	color: blue;
+}
+a:visited
+{
+	text-decoration: none;
+	color: purple;
+}
+a:hover
+{
+	text-decoration: underline;
+	color: #ff8c00;
+}
+a:active
+{
+    text-decoration: none;
+    color: #000000;
+}
+h1 a:link, h1 a:visited, h1 a:hover, h1 a:active
+{
+    text-decoration: none;
+    color: #000000;
+}
+h1, h2, h3, h4, h5, h6
+{
+    margin: 2px 0 2px 0;
+}
+h1
+{
+   font-size: 19px;
+   font-weight:normal; 
+}
+h2
+{
+	font-size: 15px;
+	font-weight:normal;
+}
+h3
+{
+    font-size: 12px;
+    font-weight:normal;
+}
+.membercard h3
+{
+    font-size: 1em;
+}
+form
+{
+    margin: 0px;
+}
+fieldset
+{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+.hidden
+{
+    visibility: hidden;
+}
+.none
+{
+    display: none;
+}
+.dh
+{
+    margin-right: auto;
+    margin-left: auto;
+    width: 768px;
+    height: 110px;
+    margin-top: 10px;
+}
+.dha
+{
+    margin-right: auto;
+    margin-left: auto;
+    width: 768px;
+    margin-top: 10px;
+}
+.df
+{
+    width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 22px;
+    color: #A0A0A0;
+}
+.dfa
+{
+    width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 10px;
+    color: #A0A0A0;
+}
+.dhn, .dfn
+{
+    background: url(../Img/n1.gif) repeat-x;
+    font-size: 11px;
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: auto;
+    width: 768px;
+    height: 30px;
+}
+.dhn ul, .dfn ul
+{
+    margin: 0px;
+    padding-top: 9px;
+    list-style-type: none;
+    height: 19px;
+    text-align: center;
+}
+.dhn ul li, .dfn ul li
+{
+    display: inline;
+    color: #FFFFFF;
+    margin-right: 25px;
+}
+.dhn a:link, .dfn a:link, .dhn a:visited, .dfn a:visited
+{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.dhn a:hover, .dfn a:hover
+{
+    text-decoration: underline;
+}
+.dhn a:active, .dfn a:active
+{
+    color: #FEFFBD;
+    text-decoration: none;
+}
+.btn
+{
+	background-color:#93BE20;
+    border: none;
+    color: #FFFFFF;
+    height: 22px;
+    font-weight: normal;
+    font-size: 9px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    padding-right: 1px;
+    padding-left: 1px;
+    cursor: pointer;
+}
+.dc1
+{
+	background-color: #FAFAFA;
+	border: 1px solid #EAEAEA;
+	padding: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	width: 50px;
+	height:50px;
+	vertical-align:middle;
+}
+input, select, textarea
+{
+	font-family: Verdana, Helvetica, Helvetica-Narrow, sans-serif;
+	border-style: solid;
+	border-color: Gray;
+	border-width: 1px;
+	font-size: 12px;
+}
+.ddl
+{
+	border-bottom: 1px dotted #A9A9A9;
+	padding-top: 10px;
+	margin-bottom: 10px;
+	clear: right;
+}
+.dfw
+{
+    border: 1px solid #AEAEAE;
+    background: #FBFBFB;
+    width: 735px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    margin-top: auto;
+    position: relative;
+}
+.dfww
+{
+    border: 1px solid #FFFFFF;
+    background: #FFFFFF;
+    width: 735px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    margin-top: auto;
+    position: relative;
+}
+.stb
+{
+	font-size:18px;
+	height: 22px;
+}
+.stbb
+{
+	border: 1px solid #4A4A4A;
+	color: #ACACAC;
+	font-size:18px;
+	height: 22px;
+}
+.stbh
+{
+	border: 1px solid silver;
+	width:130px;
+}
+.stbhb
+{
+	border: 1px solid silver;
+	color: #ACACAC;
+	background-color: #F7FBED;
+	width:130px;
+}
+.dtc1
+{
+	vertical-align:top; width: 150px; overflow: visible;
+}
+.dtc2
+{
+	overflow: visible;
+}
+.dtc3
+{
+	width: 150px; overflow: visible;
+}
+.tfw
+{
+	padding: 0px;
+	width: 100%;
+	border: 0;
+	padding:0;
+}
+.lc
+{
+	font-size:large;
+	color:#FF6600;
+}
+.ar
+{
+	background-color: #F7FBED;
+}
+.sl
+{
+	color: #999999;
+	padding-left: 5px;
+	padding-right: 5px;
+	vertical-align: middle;
+}
+.sg
+{
+	font-size: 10px;
+	color: #C0C0C0;
+}
+.cc
+{
+    background: #FBFBFB;
+	font-size: 10px;
+	border-style: none;
+	color: #C0C0C0;
+	text-align:right;
+}
+
+a.lnksr:link
+{
+    text-decoration: none;
+	color: blue;
+	font-size:large;
+}
+a.lnksr:visited
+{
+	text-decoration: none;
+	color: purple;
+	font-size:large;
+}
+a.lnksr:hover
+{
+	text-decoration: underline;
+	color: #ff8c00;
+	font-size:large;
+}
+a.lnksr:active
+{
+    text-decoration: none;
+    color: #000000;
+	font-size:large;
+}
+.st1
+{
+	font-size: large;
+	background-color: #F0F6FC;
+}
+.green
+{
+	color:#33CC33;
+}
+.lightgreen
+{
+	color:#F7FBED;
+}
+.h1m
+{
+	color:#CCCCCC;
+}

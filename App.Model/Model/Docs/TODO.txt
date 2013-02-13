@@ -1,0 +1,7 @@
+Service saves category multiple time
+Show Hide 
+	- Attribute Name in search result, view mode
+    - Attribute itself
+Home page shows recent posts
+
+Product List

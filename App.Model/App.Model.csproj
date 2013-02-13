@@ -1,0 +1,595 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{56A60E24-334A-414D-BE3A-CF8F1506FBC7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>App.Model</RootNamespace>
+    <AssemblyName>App.Model</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FredCK.FCKeditorV2, Version=2.6.3.22451, Culture=neutral, PublicKeyToken=4f86767c9b519a06, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Common\FredCK.FCKeditorV2.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Common\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="RKLib.ExportData, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Common\RKLib.ExportData.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Common\System.Web.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Common\System.Web.Extensions.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\Common\HtmlParser\HtmlParser.cs" />
+    <Compile Include="Model\Common\HtmlParser\HtmlParserScanJobs.cs" />
+    <Compile Include="Model\Common\Msg\Msg.cs" />
+    <Compile Include="Model\Common\SearchQuery\SearchQuery.cs" />
+    <Compile Include="Model\Common\Util\UXml.cs" />
+    <Compile Include="Model\Common\Util\UZip.cs" />
+    <Compile Include="Model\Common\Util\UMail.cs" />
+    <Compile Include="Model\Common\Util\UProcess.cs" />
+    <Compile Include="Model\Common\Exception\AppException.cs" />
+    <Compile Include="Model\Db\Common\Base\Items\BaseCollection.cs" />
+    <Compile Include="Model\Db\Common\Base\Items\BaseItems.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Db\Common\Base\Items\IBaseItems.cs" />
+    <Compile Include="Model\Db\Common\ValueSource\ValueSource.cs" />
+    <Compile Include="Model\Db\Common\Base\Item\BaseItem.cs" />
+    <Compile Include="Model\Db\Common\Base\List\BaseList.cs" />
+    <Compile Include="Model\Common\Process\BaseProcess.cs" />
+    <Compile Include="Model\Db\MsSql\RsOneItem\Items\AttributeLayouts.cs" />
+    <Compile Include="Model\Db\MsSql\RsOneItem\Items\Categories.cs" />
+    <Compile Include="Model\Db\MsSql\RsOneItem\Items\ServiceCategories.cs" />
+    <Compile Include="Model\Db\MsSql\RsOneItem\Items\Services.cs" />
+    <Compile Include="Model\Db\MsSql\RsOneItem\Items\Kvs.cs" />
+    <Compile Include="Model\Db\MsSql\RsOneItem\Item\AttributeLayout.cs" />
+    <Compile Include="Model\Db\MsSql\RsOneItem\Item\AttributeTable.cs" />
+    <Compile Include="Model\Db\MsSql\RsOneItem\Item\TableItem.cs" />
+    <Compile Include="Model\Db\MsSql\RsOneItem\Item\Log.cs" />
+    <Compile Include="Model\Db\MsSql\RsOneItem\Item\ServiceCategory.cs" />
+    <Compile Include="Model\Db\MsSql\RsOneItem\Item\UserRole.cs" />
+    <Compile Include="Model\Db\MsSql\RsOneItem\Item\Kv.cs" />
+    <Compile Include="Model\Db\MsSql\RsOneItem\Item\Layout.cs" />
+    <Compile Include="Model\Db\MsSql\RsOneItem\Process\ProcessUpdateCategory.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Accordion\Accordion.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Accordion\AccordionCommandEventArgs.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Accordion\AccordionContentPanel.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Accordion\AccordionDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Accordion\AccordionExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Accordion\AccordionExtenderDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Accordion\AccordionItemEvent.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Accordion\AccordionItemType.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Accordion\AccordionPane.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Accordion\AccordionPaneCollection.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Accordion\AutoSize.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\AlwaysVisibleControl\AlwaysVisibleControlDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\AlwaysVisibleControl\AlwaysVisibleControlExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\AlwaysVisibleControl\HorizontalSide.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\AlwaysVisibleControl\VerticalSide.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Animation\Animation.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Animation\AnimationExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Animation\AnimationExtenderDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Animation\AnimationJavaScriptConverter.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Animation\AnimationScripts.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\AutoComplete\AutoCompleteDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\AutoComplete\AutoCompleteExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Calendar\CalendarDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Calendar\CalendarExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Calendar\CalendarPosition.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\CascadingDropDown\CascadingDropDownDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\CascadingDropDown\CascadingDropDownExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\CascadingDropDown\CascadingDropDownNameValue.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\CollapsiblePanel\CollapsiblePanelDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\CollapsiblePanel\CollapsiblePanelExpandDirection.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\CollapsiblePanel\CollapsiblePanelExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Common\BoxSide.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Common\CommonToolkitScripts.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Common\DateTimeScripts.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Common\InputScripts.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Common\ThreadingScripts.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Common\Utility.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Compat\DragDrop\DragDropScripts.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Compat\Timer\TimerScript.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ConfirmButton\confirmButtonDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ConfirmButton\confirmButtonExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\DragPanel\DragPanelDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\DragPanel\DragPanelExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\DropDown\DropDownDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\DropDown\DropDownExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\DropShadow\DropShadowDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\DropShadow\DropShadowExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\DynamicPopulate\DynamicPopulateDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\DynamicPopulate\DynamicPopulateExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\AnimationExtenderControlBase.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\ClientCssResourceAttribute.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\ClientPropertyNameAttribute.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\ClientScriptResourceAttribute.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\ComponentReferenceAttribute.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\Constants.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\Design\ExtendedTypeDescriptionProvider.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\Design\ExtenderBaseDesignerHelpers.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\Design\ExtenderControlBaseDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\Design\ExtenderControlBaseDesigner.PageMethodSignatures.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\Design\ExternalReferences.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\Design\PageMethodSignatureAttribute.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\Design\TypeControlIDConverter.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\DynamicPopulateExtenderControlBase.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\ElementReferenceAttribute.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\ExtenderControlBase.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\ExtenderControlEventAttribute.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\ExtenderControlMethodAttribute.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\ExtenderControlPropertyAttribute.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\IClientStateManager.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\IControlResolver.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\ProfilePropertyBinding.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\ProfilePropertyBindingCollection.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\RequiredPropertyAttribute.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\RequiredScriptAttribute.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\ResolveControlEventArgs.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\ResolveControlEventHandler.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\ScriptControlBase.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\ScriptObjectBuilder.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\ScriptUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\ServicePathConverter.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\FilteredTextBox\FilteredTextBoxDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\FilteredTextBox\FilteredTextBoxExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\FilteredTextBox\FilterModes.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\FilteredTextBox\FilterTypes.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\HoverExtender\HoverExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\HoverExtender\HoverExtenderDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\HoverMenu\HoverMenuDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\HoverMenu\HoverMenuExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\HoverMenu\HoverMenuPopupPosition.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ListSearch\ListSearchDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ListSearch\ListSearchExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ListSearch\ListSearchPromptPosition.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ListSearch\ListSearchQueryPattern.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\MaskedEdit\Compatibility\BaseValidator.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\MaskedEdit\Compatibility\IBaseCompareValidatorAccessor.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\MaskedEdit\Compatibility\IBaseValidatorAccessor.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\MaskedEdit\Compatibility\IWebControlAccessor.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\MaskedEdit\Compatibility\ValidatorHelper.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\MaskedEdit\MaskedEditCommon.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\MaskedEdit\MaskedEditDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\MaskedEdit\MaskedEditEnum.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\MaskedEdit\MaskedEditExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\MaskedEdit\MaskedEditTypeConvert.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\MaskedEdit\MaskedEditValidator.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ModalPopup\ModalPopupDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ModalPopup\ModalPopupExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ModalPopup\ModalPopupRepositionMode.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\MutuallyExclusiveCheckBox\MutuallyExclusiveCheckBoxDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\MutuallyExclusiveCheckBox\MutuallyExclusiveCheckBoxExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\NoBot\NoBot.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\NoBot\NoBotDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\NoBot\NoBotEventArgs.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\NoBot\NoBotExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\NoBot\NoBotState.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\NumericUpDown\NumericUpDownDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\NumericUpDown\NumericUpDownExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\PagingBulletedList\PagingBulletedListDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\PagingBulletedList\PagingBulletedListExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\PasswordStrength\PasswordStrengthExtenderDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\PasswordStrength\PasswordStrengthExtenderExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\PasswordStrength\PropertyEnumerations.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\PopupControl\PopupControlDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\PopupControl\PopupControlExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\PopupExtender\PopupExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\PopupExtender\PopupExtenderDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\PopupExtender\PositioningMode.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Properties\Resources.Designer.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Rating\Rating.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Rating\RatingDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Rating\RatingExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ReorderList\BulletedList.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ReorderList\BulletedListItem.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ReorderList\DraggableListItemExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ReorderList\DropWatcherExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ReorderList\ReorderHandleAlignment.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ReorderList\ReorderList.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ReorderList\ReorderListDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ReorderList\ReorderListEvents.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ReorderList\ReorderListInsertLocation.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ReorderList\ReorderListItem.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ReorderList\ReorderListItemCollection.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ReorderList\ReorderListItemLayoutType.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ReorderList\RepeatDirection.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ResizableControl\ResizableControlDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ResizableControl\ResizableControlExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\RoundedCorners\BoxCorners.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\RoundedCorners\RoundedCornersDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\RoundedCorners\RoundedCornersExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Slider\SliderDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Slider\SliderExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Slider\SliderOrientation.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\SlideShow\Slide.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\SlideShow\SlideShowDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\SlideShow\SlideShowExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Tabs\TabContainer.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Tabs\TabContainerDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Tabs\TabPanel.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Tabs\TabPanelCollection.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\Tabs\TabPanelDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\TextboxWatermark\TextboxWatermarkExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\TextboxWatermark\TextboxWatermarkExtenderDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ToggleButton\ToggleButtonExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ToggleButton\ToggleButtonExtenderDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ToolkitScriptManager\ScriptCombineAttribute.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ToolkitScriptManager\ToolkitScriptManager.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\UpdatePanelAnimation\UpdatePanelAnimationDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\UpdatePanelAnimation\UpdatePanelAnimationExtender.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ValidatorCallout\ValidatorCalloutDesigner.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Ajax\ValidatorCallout\ValidatorCalloutExtender.cs" />
+    <Compile Include="Model\Ui\Web\Base\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Model\Ui\Web\Base\BaseUc.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Model\Ui\Web\Base\BaseControlUc.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Model\Common\Config\Config.cs" />
+    <Compile Include="Model\Db\Helper\SqlHelper.cs" />
+    <Compile Include="Model\Common\Util\URegEx.cs" />
+    <Compile Include="Model\Common\Util\UCrypto.cs" />
+    <Compile Include="Model\Common\Util\UData.cs" />
+    <Compile Include="Model\Common\Util\UFile.cs" />
+    <Compile Include="Model\Common\Util\UStr.cs" />
+    <Compile Include="Model\Common\Util\UWeb.cs" />
+    <Compile Include="Model\Ui\Web\Base\BaseMasterPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Model\Ui\Web\Controls\RsList\Res\RsListItem.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RsListItem.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Ui\Web\Controls\RsList\RsListItem.cs" />
+    <Compile Include="Model\Ui\Web\Controls\RsList\RsListItems.cs" />
+    <Compile Include="Model\Ui\Web\Controls\RsList\Res\RsListField.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RsListField.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Ui\Web\Controls\RsRadioButton\RsRadioButton.cs" />
+    <Compile Include="Model\Ui\Web\Controls\RsGridView\RsGridView.cs" />
+    <Compile Include="Model\Ui\Web\Controls\RsFileUpload\RsFileUpload.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Ui\Web\Controls\RsFileViewer\RsFileViewer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Ui\Web\Controls\RsHyperLink\RsHyperLink.cs" />
+    <Compile Include="Model\Ui\Web\Controls\RsCheckBox\RsCheckBox.cs" />
+    <Compile Include="Model\Ui\Web\Controls\RsList\RsListField.cs" />
+    <Compile Include="Model\Ui\Web\Controls\RsList\RsList.cs" />
+    <Compile Include="Model\Ui\Web\Controls\RsList\RsListFields.cs" />
+    <Compile Include="Model\Ui\Web\Controls\RsTextArea\RsTextArea.cs" />
+    <Compile Include="Model\Ui\Web\Controls\Interface\IRsControl.cs" />
+    <Compile Include="Model\Ui\Web\Controls\RsDoubleOpt\RsDoubleOpt.cs" />
+    <Compile Include="Model\Ui\Web\Controls\RsMail\RsMail.cs" />
+    <Compile Include="Model\Ui\Web\Controls\RsYearCombo\RsYearCombo.cs" />
+    <Compile Include="Model\Ui\Web\Controls\RsImageButton\RsImageButton.cs" />
+    <Compile Include="Model\Ui\Web\Controls\RsDropDownList\RsDropDownList.cs" />
+    <Compile Include="Model\Ui\Web\Controls\RsCheckBoxList\RsCheckBoxList.cs" />
+    <Compile Include="Model\Ui\Web\Controls\RsRadioButtonList\RsRadioButtonList.cs" />
+    <Compile Include="Model\Ui\Web\Controls\RsRichTextBox\RsRichTextBox.cs" />
+    <Compile Include="Model\Ui\Web\Controls\RsTextBox\RsTextBox.cs" />
+    <Compile Include="Model\Ui\Web\Cxt\CxtParam.cs" />
+    <Compile Include="Model\Ui\Web\Cxt\Cxt.cs" />
+    <Compile Include="Model\Db\Helper\DbHelper.cs" />
+    <Compile Include="Model\Db\MsSql\RsOneItem\Items\Attributes.cs" />
+    <Compile Include="Model\Db\MsSql\RsOneItem\Items\ItemAttributes.cs" />
+    <Compile Include="Model\Db\MsSql\RsOneItem\Item\AttributeType.cs" />
+    <Compile Include="Model\Db\MsSql\RsOneItem\Item\Attribute.cs" />
+    <Compile Include="Model\Db\MsSql\RsOneItem\Item\Item.cs" />
+    <Compile Include="Model\Db\MsSql\RsOneItem\Item\ItemAttribute.cs" />
+    <Compile Include="Model\Db\MsSql\RsOneItem\Item\Category.cs" />
+    <Compile Include="Model\Db\MsSql\RsOneItem\Item\Service.cs" />
+    <Compile Include="Model\Db\MsSql\RsOneItem\Item\User.cs" />
+    <Compile Include="Model\Db\MsSql\RsOneItem\Item\Task.cs" />
+    <Compile Include="Model\Db\MsSql\RsOneItem\Item\Role.cs" />
+    <Compile Include="Model\Ui\Win\Util\MessageForm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Model\Ui\Web\Controls\RsLabel\RsLabel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\Design\ExternalReferences.t4" />
+    <None Include="Model\Ui\Web\Controls\RsDoubleOpt\RsDoubleOpt.sql" />
+    <None Include="Model\Ui\Web\Controls\RsList\Res\RsListField.xsc">
+      <DependentUpon>RsListField.xsd</DependentUpon>
+    </None>
+    <None Include="Model\Ui\Web\Controls\RsList\Res\RsListField.xss">
+      <DependentUpon>RsListField.xsd</DependentUpon>
+    </None>
+    <None Include="Model\Ui\Web\Controls\RsList\Res\RsListItem.xsc">
+      <DependentUpon>RsListItem.xsd</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsList\Res\RsListItem.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RsListItem.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Model\Ui\Web\Controls\RsList\Res\RsListItem.xss">
+      <DependentUpon>RsListItem.xsd</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsList\Res\RsListField.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RsListField.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\Docs\Dotfuscated\DllNames.txt" />
+    <Content Include="Model\Docs\Dotfuscated\RsOneItem.xml" />
+    <Content Include="Model\Docs\Dotfuscated\DOS.txt" />
+    <Content Include="Model\Docs\TODO.txt" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Accordion\Accordion.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Accordion\AccordionBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\AlwaysVisibleControl\AlwaysVisible.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\AlwaysVisibleControl\AlwaysVisibleControlBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Animation\Animation.ico" />
+    <Content Include="Model\Ui\Web\Controls\Ajax\Animation\AnimationBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Animation\Animations.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\AutoComplete\AutoComplete.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\AutoComplete\AutoCompleteBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Calendar\arrow-left.gif" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Calendar\arrow-right.gif" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Calendar\Calendar.css" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Calendar\Calendar.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Calendar\CalendarBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\CascadingDropDown\CascadingDropDown.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\CascadingDropDown\CascadingDropDownBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\CollapsiblePanel\CollapsiblePanel.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\CollapsiblePanel\CollapsiblePanelBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Common\Common.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Common\DateTime.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Common\Input.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Common\Threading.js" />
+    <Content Include="Model\Ui\Web\Controls\Ajax\Compat\DragDrop\DragDropScripts.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Compat\Timer\Timer.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ConfirmButton\ConfirmButton.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ConfirmButton\confirmButtonBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\DragPanel\DragPanel.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\DragPanel\FloatingBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\DropDown\drop-arrow.gif" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\DropDown\DropDown.css" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\DropDown\DropDown.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\DropDown\DropDownBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\DropShadow\DropShadow.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\DropShadow\DropShadowBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\DynamicPopulate\DynamicPopulate.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\DynamicPopulate\DynamicPopulateBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ExtenderBase\BaseScripts.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\FilteredTextBox\FilteredTextBox.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\FilteredTextBox\FilteredTextBoxBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\HoverExtender\HoverBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\HoverMenu\HoverMenu.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\HoverMenu\HoverMenuBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ListSearch\ListSearch.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ListSearch\ListSearchBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\MaskedEdit\MaskedEdit.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\MaskedEdit\MaskedEditBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\MaskedEdit\MaskedEditValidator.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ModalPopup\ModalPopup.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ModalPopup\ModalPopupBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\MutuallyExclusiveCheckBox\MutuallyExclusiveCheckBox.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\MutuallyExclusiveCheckBox\MutuallyExclusiveCheckBoxBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\NoBot\NoBot.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\NoBot\NoBotBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\NumericUpDown\NumericUpDown.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\NumericUpDown\NumericUpDownBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\PagingBulletedList\PagingBulletedList.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\PagingBulletedList\PagingBulletedListBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\PasswordStrength\PasswordStrength.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\PasswordStrength\PasswordStrengthExtenderBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\PopupControl\PopupControl.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\PopupControl\PopupControlBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\PopupExtender\PopupBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Rating\Rating.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Rating\RatingBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ReorderList\DraggableListItemBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ReorderList\DropWatcherBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ReorderList\ReorderList.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ResizableControl\ResizableControl.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ResizableControl\ResizableControlBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\RoundedCorners\RoundedCorners.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\RoundedCorners\RoundedCornersBehavior.js" />
+    <Content Include="Model\Ui\Web\Controls\Ajax\Slider\Images\slider_h_handle.gif" />
+    <Content Include="Model\Ui\Web\Controls\Ajax\Slider\Images\slider_h_rail.gif" />
+    <Content Include="Model\Ui\Web\Controls\Ajax\Slider\Images\slider_v_handle.gif" />
+    <Content Include="Model\Ui\Web\Controls\Ajax\Slider\Images\slider_v_rail.gif" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Slider\Slider.css" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Slider\Slider.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Slider\SliderBehavior.js" />
+    <Content Include="Model\Ui\Web\Controls\Ajax\SlideShow\SlideShow.ico" />
+    <Content Include="Model\Ui\Web\Controls\Ajax\SlideShow\SlideShowBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Tabs\tab-active-left.gif" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Tabs\tab-active-right.gif" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Tabs\tab-active.gif" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Tabs\tab-hover-left.gif" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Tabs\tab-hover-right.gif" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Tabs\tab-hover.gif" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Tabs\tab-left.gif" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Tabs\tab-line.gif" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Tabs\tab-right.gif" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Tabs\tab.gif" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Tabs\Tabs.css" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Tabs\Tabs.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Tabs\Tabs.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\TextboxWatermark\TextboxWatermark.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\TextboxWatermark\TextboxWatermark.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ToggleButton\ToggleButton.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ToggleButton\ToggleButton.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\UpdatePanelAnimation\UpdatePanelAnimation.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\UpdatePanelAnimation\UpdatePanelAnimationBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ValidatorCallout\alert-large.gif" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ValidatorCallout\alert-small.gif" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ValidatorCallout\close.gif" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ValidatorCallout\ValidatorCallout.css" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ValidatorCallout\ValidatorCallout.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ValidatorCallout\ValidatorCalloutBehavior.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileUpload\Res\bd.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileUpload\Res\be.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileViewer\Res\img.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileViewer\Res\ni.jpg" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileViewer\Res\nis.jpg" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileUpload\Res\bs.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileUpload\Res\bc.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileViewer\Res\bmp.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileViewer\Res\doc.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileViewer\Res\docx.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileViewer\Res\exe.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileViewer\Res\gif.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileViewer\Res\hlp.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileViewer\Res\jpg.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileViewer\Res\mdb.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileViewer\Res\mdf.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileViewer\Res\msg.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileViewer\Res\msi.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileViewer\Res\pdf.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileViewer\Res\pic.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileViewer\Res\png.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileViewer\Res\ppt.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileViewer\Res\ra.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileViewer\Res\rar.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileViewer\Res\reg.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileViewer\Res\rtf.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileViewer\Res\tif.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileViewer\Res\wmv.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileViewer\Res\xls.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileViewer\Res\lnk.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileViewer\Res\_f.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsFileViewer\Res\txt.ico" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsGridView\Res\JScript.js" />
+    <Content Include="Model\Ui\Web\Controls\RsList\Res\Script.js" />
+    <EmbeddedResource Include="Model\Ui\Web\Controls\RsTextBox\Res\Script.js" />
+    <Content Include="Model\Ui\Web\Template\ActivateAccount.htm" />
+    <Content Include="Model\Ui\Web\Template\ForgotPassword.htm" />
+    <Content Include="Model\Ui\Web\Template\JobEmail.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\Properties\Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ScriptResources\ScriptResources.ar.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ScriptResources\ScriptResources.cs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ScriptResources\ScriptResources.de.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ScriptResources\ScriptResources.es.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ScriptResources\ScriptResources.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ScriptResources\ScriptResources.he.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ScriptResources\ScriptResources.hi.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ScriptResources\ScriptResources.it.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ScriptResources\ScriptResources.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ScriptResources\ScriptResources.ko.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ScriptResources\ScriptResources.nl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ScriptResources\ScriptResources.pt.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ScriptResources\ScriptResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ScriptResources\ScriptResources.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ScriptResources\ScriptResources.tr-TR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ScriptResources\ScriptResources.zh-CHS.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\Ui\Web\Controls\Ajax\ScriptResources\ScriptResources.zh-CHT.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\Ui\Common\Base\" />
+    <Folder Include="Model\Ui\Win\Controls\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
